@@ -9,7 +9,7 @@ const Counter = () => {
     function incree(){
         setValue(value+1)
     }
-
++
  function dcree(){
         setValue(value-1)
     }
