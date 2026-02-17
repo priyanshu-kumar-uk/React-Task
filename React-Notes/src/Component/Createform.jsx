@@ -8,10 +8,7 @@ const Createform = () => {
 
 const [users, setUsers] = useState([])
     function submitForm(data){
-
         let newarr = [...users,data]
-
-
          setUsers(newarr)
          localStorage.setItem("Notes",JSON.stringify(newarr))
 
@@ -22,9 +19,7 @@ const [users, setUsers] = useState([])
        <form  onSubmit={handleSubmit(submitForm)}>
           <input type="text" placeholder='title'
             {...register("title",{required:"Title is requrid"})}
-          
           />
-
           <textarea placeholder='Decription'
             {...register("decription",{required:"decription is requrid"})}
           
