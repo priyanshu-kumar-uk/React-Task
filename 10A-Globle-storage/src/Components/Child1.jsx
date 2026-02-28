@@ -1,16 +1,13 @@
 import React, { memo } from 'react'
-import Child2 from './Child2'
 
-const Child1 = memo(
-    ({paragraph}) => {
-    console.log("Child-1 Rendering",paragraph)
+const Child1 = ({va}) => {
+
+  console.log("Child-1...reRendering")
   return (
     <div>
-      {paragraph}
-     </div>
-    
+  {va}
+    </div>
   )
 }
-)
 
-export default Child1
+export default memo( Child1)

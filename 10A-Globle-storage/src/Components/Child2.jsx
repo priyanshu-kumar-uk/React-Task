@@ -1,10 +1,11 @@
 import React, { memo } from 'react'
 
-const Child2 = ({paragraph}) => {
-    console.log("child-2 Rendering",paragraph)
+const Child2 = ({value}) => {
+  console.log("Child-2...reRendering")
   return (
     <div>
-      {paragraph}
+
+      <button onClick={value}>click form child 2</button>
     </div>
   )
 }
